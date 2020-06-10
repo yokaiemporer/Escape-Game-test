@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.cup{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    /* transform: translate(-50%,-50%); */
+    width: 150px;
+    height: 180px;
+    border: 6px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-repeat: repeat-x;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 100px;
+    }
+    10%{
+        background-position: 0 100px;
+    }
+    40%{
+        background-position: 1000 -70px;
+    }
+    0%{
+        background-position: 0 100px;
+    }
+}

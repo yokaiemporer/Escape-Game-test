@@ -1,38 +1,117 @@
 .App {
   text-align: center;
+  width: 95%;
+  margin: 15px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-drag {
+  display:flex;
+  text-align: center;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wip {
+  /* position: absolute; */
+  /* align-self: flex-start; */
+  width: 150px;
+  height: 100vh;
+  background-color: #EEEEEE;
+  border-right: 1px dotted;
+}
+.droppable {
+  /* align-self: flex-end; */
+  width: 150px;
+  height: 100vh;
+  background-color: #9E9E9E;
+  border-left: 1px dotted;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wip2 {
+  /* position: absolute; */
+  align-self: center;
+  width: 300px;
+  height: 300vh;
+  /* top: 50; */
+  background-color: #EEEEEE;
+  border-right: 1px dotted;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #E0E0E0;
+  width:100%;
+}
+
+.to_take
+{
+  /* position: absolute; */
+  width: 150px;
+  height: 100vh;
+  /* right: 0;
+  top: 10; */
+  background-color: #9E9E9E;
+  border-left: 1px dotted;
+}
+.task-header {
+  /* display: inline-block; */
+  background-color: skyblue;
+  width:100%;
+}
+
+
+.draggable {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+}
+.game-draggable {
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
 }
 
-.App-link {
-  color: #61dafb;
+.puz3solution
+{
+  display:flex;
+  align-self: flex-end;
+}
+#puz3-box-visible
+{
+  display:flex
+}
+.bomb{
+  /* background-image: url('Resmages/bomb.png'); */
+  width: 35px;
+  height: 30px;
+  transition: width 4s, height 4s, transform 4s;
+  position: absolute;
+  left: 248px;
+  bottom: 32px;
+  transform:rotate(-10deg)
+
+}
+.bomb:hover{
+
+  width: 200px;
+  height: 200px;
+  transform: rotate(360deg);
+}
+.puz4-grid-map
+{
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+
+}
+.sigCanvas
+{
+
+  z-index:100;
+  /* height:1000px; */
+  /* background-color:black */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

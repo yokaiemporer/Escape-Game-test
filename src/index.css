@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.grid-map {
+  
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+  /* background-color: #2196F3; */
+  
+}
+
+.grid-map-cell {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  font-size: 30px;
+  text-align: center;
+}
+
